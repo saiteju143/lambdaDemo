@@ -34,7 +34,7 @@ def lambda_handler(event, context):
             df.loc[int(py_dict['id'])] = py_dict
 
     df.to_csv('/tmp/test.csv', sep = ',')
-    print('test.csv file created')
+    print('test.csv file created**')
 
     try:
         date_var = str(date.today())
